@@ -1,0 +1,80 @@
+body {
+    font-family: 'Roboto Slab', serif;
+}
+h2 {
+    font-weight: 700;
+}
+
+.nav-boton {
+    background-color: rgb(108, 101, 240);
+    color: black;
+    padding: 10px;
+    border: 2px solid black;
+    display: none;
+
+}
+
+.nav-enlace {
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(234, 191, 160);
+    color: black;
+    padding: 10px;
+}
+
+.nav-enlace:hover {
+    background-color: rgb(194, 210, 244);
+}
+
+nav {
+    display: flex;
+    background-color: rgb(238, 164, 164);
+    padding: 5px;
+    justify-content: space-around;
+}
+
+/*  otro proyecto */
+
+.container {
+    display: flex;
+    margin: 30px auto; 
+    width: 1000px;
+    text-align: center;
+}
+
+.cajas {
+background-color:rgb(161, 157, 84);
+color: black;
+border: 1px solid black;
+padding: 10px;
+margin: 10px;
+}
+.precio {
+    font-size: 50px;
+    color: aqua;
+}
+
+@media (max-width:600px) {
+    nav {
+        flex-direction: column;
+        background-color:black
+        }
+        .nav-enlace {
+            margin: 10px 0;
+        }
+        .nav-boton {
+            display: inline;
+        }
+        .desaparece {
+            display: none;
+        }
+        @media (max-width:500px) {
+            .cajas {
+                display: flex; flex-direction: column;
+            }
+
+        }
+        
+
+}
+
